@@ -41,60 +41,54 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- "Vos Ferme" Start -->
-        <div class="container-fluid">
-            <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
-                <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
-                    <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
+        <!-- "Vos Fermes" and "Recommendations" Start -->
+        <div class="container-fluid pt-4 px-4 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="row g-4 w-100 justify-content-center align-items-stretch" style="max-width: 1200px;">
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="bg-light rounded p-4 my-4 mx-3 w-100">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <h3>Vos Fermes</h3>
                         </div>
                         <div class="text-center">
                             <div class="mb-3">
-                                <a href="Tableau de Bord Boumerdas.html" type="button" class="btn btn-primary">Boumerdes 1</a>
-                                <img class="ms-2 help-icon" src="imgtest/help-question-1-circle-faq-frame-help-info-mark-more-query-ques.svg" style="width: 20px; height: 20px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#helpModal" />
+                                <a href="Tableau de Bord Boumerdas.html" class="btn btn-primary">Boumerdes 1</a>
+                                
                             </div>
                             <div class="mb-3">
                                 <button type="button" class="btn btn-primary">Boumerdes 2</button>
-                                <img class="ms-2 help-icon" src="imgtest/help-question-1-circle-faq-frame-help-info-mark-more-query-ques.svg" style="width: 20px; height: 20px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#helpModal" />
+                                
                             </div>
                         </div>
                         <div class="text-center mt-4">
                             Ajouter une ferme 
                             <img id="plusIcon" src="/icone/add-1--expand-cross-buttons-button-more-remove-plus-add-+-mathematics-math.png" alt="Plus icon" class="ms-2" style="width: 16px; height: 16px; cursor: pointer;">
                         </div>
-                        
-                        <!-- JavaScript -->
-                        <script>
-                            document.getElementById("plusIcon").onclick = function() {
-                                window.location.href = "Ajouter-une-ferme.html";
-                            };
-                        </script>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- "Vos Ferme" End -->
 
-        <!-- Modal Start -->
-        <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="helpModalLabel">Résumé des recommendations</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Contenu des recommendations ici.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <!-- Recommendations Box -->
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="bg-light rounded p-4 my-4 mx-3 w-100">
+                        <h3>Résumé des recommendations</h3>
+                        <div class="recommendations-content">
+                            <h6 class="">Boumerdes 1 :</h6>
+                            <p>Contenu des recommendations ici.</p>
+                            <h6 class="">Boumerdes 2 :</h6>
+                            <p>Pas de recommendations disponible pour l'instant.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal End -->
+        <!-- "Vos Fermes" and "Recommendations" End -->
     </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("plusIcon").onclick = function() {
+            window.location.href = "Ajouter-une-ferme.html";
+        };
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
